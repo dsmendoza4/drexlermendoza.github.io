@@ -1,0 +1,358 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Sans JP", Verdana, Arial, sans-serif;
+    margin: 0;
+    background-color: #f1e7da;
+    background-image: repeating-linear-gradient(
+        90deg,
+        rgba(35, 57, 83, 0.04) 0,
+        rgba(35, 57, 83, 0.04) 1px,
+        transparent 1px,
+        transparent 8px
+    );
+    color: #233953;
+}
+
+h1 {
+    font-family: "Anton", Impact, "Arial Narrow", sans-serif;
+    font-size: 4.5rem;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 3px 3px 0 #d6c4a8;
+}
+
+h2 {
+    font-size: 2.25rem;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin-top: 0;
+    margin-bottom: 1.875rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #b83a2d;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 0.625rem;
+}
+
+h4::after {
+    content: "";
+    display: block;
+    width: 3rem;
+    height: 2px;
+    margin: 0.5rem auto 0;
+    background-color: #b83a2d;
+}
+
+h3,
+h4,
+figcaption,
+.hanko {
+    font-family: "Noto Serif JP", "Yu Mincho", Georgia, "Times New Roman", serif;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.7;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+ul {
+    line-height: 1.7;
+    padding-left: 2.2rem;
+}
+
+li {
+    margin-bottom: 0.4rem;
+    letter-spacing: 0.02em;
+}
+
+header {
+    padding: 1.25rem 1.25rem 0;
+    border-top: 0.5rem solid #b83a2d;
+}
+
+header::before {
+    content: "";
+    display: block;
+    width: 6rem;
+    height: 6rem;
+    margin: 0 auto 0.5rem;
+    background-image: url("../MMS-171-Files/crest.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+    padding: 0.75rem 1.25rem;
+    background-color: #233953;
+    border-bottom: 0.25rem solid #b83a2d;
+}
+
+nav a {
+    color: #f1e7da;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-decoration: none;
+    padding: 0.25rem 0.5rem;
+    border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+    color: #e0b84f;
+    border-bottom-color: #b83a2d;
+}
+
+nav a:focus-visible,
+footer a:focus-visible {
+    outline: 3px solid #e0b84f;
+    outline-offset: 3px;
+}
+
+main {
+    padding: 2rem 1.25rem 0;
+}
+
+main a {
+    color: #9b2c22;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
+
+main a:hover {
+    color: #233953;
+}
+
+main a:focus-visible {
+    outline: 3px solid #233953;
+    outline-offset: 3px;
+}
+
+section {
+    max-width: 750px;
+    margin: 0 auto 2.5rem;
+    padding: 1.5rem 2rem;
+    background-color: #f8f1e7;
+    border: 4px solid #233953;
+    border-radius: 0.875rem;
+    scroll-margin-top: 5rem;
+}
+
+section:target {
+    border-color: #b83a2d;
+}
+
+section p {
+    max-width: 68ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bio {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.bio-photo {
+    flex: 0 0 auto;
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    padding: 0.3rem;
+    background-color: #f8f1e7;
+    border: 2px solid #233953;
+    border-radius: 50%;
+}
+
+.bio-text {
+    flex: 1;
+    margin: 0;
+}
+
+article ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    list-style: none;
+    padding-left: 0;
+}
+
+article li {
+    margin: 0;
+    padding: 0.25rem 0.9rem;
+    border: 1px solid #233953;
+    border-radius: 2rem;
+    background-color: #f1e7da;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+figure {
+    margin: 1.25rem 0;
+    text-align: center;
+}
+
+figure img {
+    padding: 0.3rem;
+    background-color: #f1e7da;
+    border: 2px solid #233953;
+}
+
+figcaption {
+    font-size: 1rem;
+    letter-spacing: 0.2px;
+    margin-top: 0.5rem;
+}
+
+.gallery {
+    display: flex;
+    gap: 1.25rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery figure {
+    flex: 1 1 15.625rem;
+    max-width: 15.625rem;
+    margin: 0;
+}
+
+.model-gallery {
+    align-items: flex-start;
+}
+
+.model-column {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.model-column figure {
+    width: 100%;
+    max-width: none;
+    flex: none;
+    margin: 0;
+}
+
+.model-column img {
+    width: 100%;
+}
+
+footer {
+    background-color: #233953;
+    color: #f1e7da;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 2.5rem 1.25rem;
+    border-top: 0.5rem solid #b83a2d;
+}
+
+footer h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.3em;
+    margin-bottom: 1.25rem;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #e0b84f;
+}
+
+.hanko {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    margin: 0 auto 1.25rem;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #f8f1e7;
+    background-color: #b83a2d;
+    border: 2px solid #f1e7da;
+    border-radius: 0.25rem;
+}
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 2.75rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    section {
+        padding: 1.25rem 1rem;
+    }
+
+    .bio {
+        flex-direction: column;
+    }
+
+    .bio-photo {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .bio-text {
+        width: 100%;
+    }
+
+    .model-gallery {
+        flex-direction: column;
+    }
+
+    .model-column {
+        width: 100%;
+        flex: none;
+    }
+}
